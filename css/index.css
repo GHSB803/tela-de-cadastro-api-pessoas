@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&family=DM+Sans:ital@1&family=Lora:ital@1&family=Noto+Sans+JP:wght@100&family=Pixelify+Sans&family=Raleway:wght@100&family=Righteous&family=Smokum&display=swap');
+
+body {
+    font-family: Pixelify Sans;
+    background-color: #0a0c0d;
+}
+
+:root {
+    --cor1: #f2f2f2;
+    --cor2: #348e91;
+    --cor3: #1c5052;
+    --cor4: #213635;
+    --cor5: #0a0c0d;
+}
+
+.logo {
+    background-color: #F7F7F7;
+    width: 30vw;
+    height: 100vh;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.form-floating {
+    margin: 1% auto;
+    width: 350px;
+    margin-left: 500px;
+    margin-top: -180px;
+}
+
+div {
+    width: 100px;
+    height: 100px;
+}
+
+.login {
+    margin-left: 1100px;
+    margin-top: 50px;
+}
