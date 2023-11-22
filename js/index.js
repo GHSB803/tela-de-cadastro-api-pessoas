@@ -12,7 +12,7 @@ function mascara(i) {
     if (v.length == 11) i.value += "-";
 }
 
-const mascaraTel = (event) => {
+const mascaraTEL = (event) => {
     let input = event.target
     input.value = phoneMask(input.value)
   }
