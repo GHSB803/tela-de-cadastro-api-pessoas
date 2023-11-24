@@ -18,6 +18,7 @@ const mascaraTEL = (event) => {
   }
  
   const phoneMask = (value) => {
+    
     if (!value) return ""
     value = value.replace(/\D/g,'')
     value = value.replace(/(\d{2})(\d)/,"($1) $2")

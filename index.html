@@ -38,53 +38,64 @@
         </div>
     </nav>
 
-    <div class="grid-container">
-        <div class="div" id="container-a">
-            <img src="css/Captura de tela 2023-10-27 081121.png" width="150px" height="100px">
-        </div>
+    <form>
 
-        <div id="container-b">
-            <div class="form-floating mb-3">
-                <input type="text" class="form-control" id="floatingInput">
-                <label for="floatingInput">Nome</label>
+        <div class="grid-container">
+            <div class="div" id="container-a">
+                <img src="css/Captura de tela 2023-10-27 081121.png" width="150px" height="100px">
             </div>
-            <div class="form-floating mb-3">
-                <input type="text" class="form-control" id="floatingPassword" oninput="mascara(this)">
-                <label for="floatingPassword">Cpf</label>
-            </div>
-            <div class="form-floating mb-3">
-                <input type="text" class="form-control" id="floatingInput" maxlength="15" oninput="mascaraTEL(event)">
-                <label for="floatingInput">Telefone</label>
-            </div>
-            <div class="form-floating mb-3">
-                <input type="text" class="form-control" id="floatingPassword">
-                <label for="floatingPassword">Endereço</label>
-            </div>
-            <div class="form-floating mb-3">
-                <input type="date" class="form-control" id="floatingInput">
-                <label for="floatingInput">Data de Nascimento</label>
-            </div>
-            <div class="form-floating mb-3">
-                <input type="text" class="form-control" id="floatingPassword">
-                <label for="floatingPassword">Altura</label>
-            </div>
-            <div class="form-floating mb-3">
-                <input type="text" class="form-control" id="floatingInput">
-                <label for="floatingInput">Peso</label>
-            </div>
-        </div>
 
-        <div class="div" id="container-c" >
-            <button type="button" class="btn btn-primary"
-                style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem; width: 120px; background-color: #348e91; border: none; margin: 2px;">
-                login
-            </button>
-            <button type="button" class="btn btn-primary" onclick="cadastrar()"
-                style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem; width: 180px; background-color: #1c5052; border: none; margin: 2px; ">
-                Cadastrar-se
-            </button>
-        </div>
+            <div id="container-b">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput" name="lastname" required minlength="3"
+                        maxlength="15">
+                    <label for="floatingInput">Nome</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingPassword" oninput="mascara(this)" required
+                        minlength="11">
+                    <label for="floatingPassword">Cpf</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput" maxlength="15" oninput="mascaraTEL(event)" required
+                        minlength="11">
+                    <label for="floatingInput">Telefone</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingPassword" name="lastname" required minlength="8"
+                        maxlength="45">
+                    <label for="floatingPassword">Endereço</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="date" class="form-control" id="floatingInput" name="lastname" required minlength="4"
+                        maxlength="15">
+                    <label for="floatingInput">Data de Nascimento</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingPassword" name="lastname" required minlength="3"
+                        maxlength="3">
+                    <label for="floatingPassword">Altura(cm)</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput" name="lastname" required minlength="2"
+                        maxlength="3">
+                    <label for="floatingInput">Peso(kg)</label>
+                </div>
+            </div>
+
+            <div class="div" id="container-c">
+                <button type="submit" class="btn btn-primary"
+                    style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem; width: 120px; background-color: #348e91; border: none; margin: 2px;">
+                    login
+                </button>
+                <button type="submit" class="btn btn-primary" onclick="cadastrar()"
+                    style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem; width: 180px; background-color: #1c5052; border: none; margin: 2px; ">
+                    Cadastrar-se
+                </button>
+            </div>
+    </form>
     </div>
+
 </body>
 
 </html>
